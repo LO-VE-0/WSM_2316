@@ -1,3 +1,38 @@
 body {
     background-color: beige;
 }
+h1, h2 {
+    background-color: plum;
+}
+h2:first-child() {
+    background-color: plum;
+}
+h1 ~ h2 {
+    background-color: plum;
+}
+
+li {
+    color: #333;
+    font-size: 32px;
+
+}
+ol {
+    color: #333;
+    font-size: 32px;
+}
+.syncro {
+    color:skyblue;
+}
+.xyz {
+    color:darkblue;
+}
+.effect {
+    color : crimson;
+}
+.normal {
+    color: orange;
+}
+
+li:nth-child(5) {
+    text-decoration: underline;
+}
