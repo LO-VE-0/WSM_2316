@@ -3,7 +3,7 @@
 1. ```<style>...</style> ```in HTML```<head>```
 1. __.css 파일 만들어서 link__
 
-# gustlr
+# 형식
 ```css
 selector {
     attribute : value;   /* comment */
