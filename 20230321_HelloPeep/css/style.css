@@ -36,3 +36,15 @@ ol {
 li:nth-child(5) {
     text-decoration: underline;
 }
+li:nth-child(even) {
+    background-color: #eee;
+}
+li:nth-child(5n+0) {
+    background-color: #aaa;
+}
+h5 ~ h6 {
+    
+}
+input[type=text] {
+    background-color: aqua;
+}
