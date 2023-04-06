@@ -16,13 +16,9 @@ h1 + h2 {
 h1, h2 {
     background-color: plum;
 }
-
-li {
-    color: #333;
-    font-size: 32px;
-
-}
-ol {
+/* ul : unordered list 
+    ul만 써도 먹긴 함 : CSS의 특징 (상속받는 속성이 있음) */
+ol> li, ul {
     color: #333;
     font-size: 32px;
 }
@@ -42,15 +38,20 @@ ol {
 li:nth-child(5) {
     text-decoration: underline;
 }
+/* 짝수 : even, 2n  /  홀수 : odd */
 li:nth-child(even) {
     background-color: #eee;
 }
-li:nth-child(5n+0) {
+li:nth-child(5n) {
     background-color: #aaa;
 }
-h5 ~ h6 {
-    
-}
+/* 보통은 잘 안쓰이긴함 */
 input[type=text] {
     background-color: aqua;
+}
+ul:nth-child(2) > li:nth-child(2) {
+    text-decoration: overline;
+}
+body > div:nth-child(8) > ul:nth-child(3) > li:nth-child(2) {
+    font-size: 8px;
 }
