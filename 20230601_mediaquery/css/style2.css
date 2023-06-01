@@ -1,0 +1,16 @@
+/* mobile */
+body{
+    background-color: deeppink;
+}
+/* tablet */
+@media screen and (min-width: 540px) {
+    body{
+        background-color: dodgerblue;
+    }
+}
+/* desktop */
+@media screen and (min-width: 720px) {
+    body{
+        background-color: crimson;
+    }
+}
