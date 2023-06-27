@@ -15,6 +15,7 @@
 
 const nav_toggle = document.getElementById("nav-toggle");
 const navToggleIcon = nav_toggle.getElementsByTagName("i")[0];
+console.log(navToggleIcon);
 const navListUl = document.getElementsByClassName("nav-list")[0];
 
 console.log(navToggleIcon);
