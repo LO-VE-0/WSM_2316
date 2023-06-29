@@ -13,3 +13,4 @@ for (let bookItem of bookItems) {  //.book-item 하나씩 꺼내자
 // bookItem = bookItems[0];
 // const bookItemImg = bookItem.getElementsByTagName("img")[0];
 // bookItemImg.src = books[3].img;
+// bookItemImg.src = books[3]["img"];
