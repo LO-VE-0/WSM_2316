@@ -2,6 +2,14 @@
 const bookId = new URL(window.location.href).searchParams.get('book');
 console.log(`bookID: ${bookId}, type: ${typeof bookId}`);
 
+// bookId가 null이면, index.html로 가자
+if (bookId === null) {
+    location.replace("index.html");
+    // window.location.href = "index.html";
+    // window.open("index.html", target = "_top");   // 새로운 창 열려서 이동하는 문제 해결
+
+}
+
 
 // String을 int로 변환 -> -1 -> books의 인덱스로 변환 (int)
 let bookIdNumber = Number(bookId);   // string -> number
