@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.container .item {
+    border: 2px solid black;
+}
+html,
+body {
+    height: 100%;
+}
+.container {
+    width: 100%;
+    height: 100%;   /* 높이를 브라우저 창 전체를 차지하는 방법 100vh (vh: viewport height (보이는 웹브라우저의 높이) */
+    display: grid;
+    grid-template-columns: 3fr 7fr;   /* 30% 70% */
+    grid-template-rows: 4fr 6fr;
+}
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item1 {
+    background-color: #FFC0CB ;
+}
+
+.item2 {
+    background-color: #343B61;
+}
+.item3 {
+    background-color: #EBB866;
+}
+.item4 {
+    background-color: #B9E0FD;
+}
