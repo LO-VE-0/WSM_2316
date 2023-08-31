@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.container * {
+    border: 2px solid black;
+}
+figure > img {
+    height:100px;
+    width: 200px;
+    object-fit: cover;   /* cover: 비율 맞추고 그에 따라 위아래 자르기(이게 더 많이 쓰임),  
+                           contain: 비율 흐트러뜨리지 말고 그 안에서 배치 (여백이 생김)*/
+}
+html {
+    height: 100%;
+}
+.container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 200px 3fr 1fr ;
+    grid-template-rows: 44px 1fr 80px;
+    grid-template-areas: 
+    "header header header"
+    "side_left  main   side2"
+    "footer footer  footer";
+    /* 클래스 이름이랑 area 이름이 같지 않아도 됨 */
+}
+.header {
+    background-color:darkkhaki;
+    grid-area: header;
+}
+.side1 {
+    background-color: cadetblue;
+    grid-area: side_left;
+}
+.main {
+    background-color: beige;
+    grid-area: main;
+}
+.side2 {
+    background-color: lightsteelblue;
+    grid-area: side2;
+}
+.footer {
+    background-color: mistyrose;
+    grid-area: footer;
+}
