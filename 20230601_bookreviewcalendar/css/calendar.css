@@ -45,7 +45,11 @@ main {
     border-radius: 10px;
     padding: 10px;
 }
-
+.left:hover,
+.right:hover,
+.month:hover {
+    cursor: pointer;
+}
 @media screen and (max-width: 720px) {
     
 }
